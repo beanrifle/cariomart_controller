@@ -29,19 +29,334 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
+KEY ActiveRoot "cariomart_mss::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
+LIST LIBRARIES
+MSS_BFM_LIB
+ENDLIST
+LIST LIBRARY_MSS_BFM_LIB
+ALIAS=..\component\Actel\SmartFusionMSS\MSS\2.5.200\mti\user_verilog\MSS_BFM_LIB
+COMPILE_OPTION=REFRESH_AND_COMPILE
+CUSTOMPATH=false
+ENDLIST
 LIST FileManager
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490765"
+SIZE="945"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
+STATE="utd"
+TIME="1574928134"
+SIZE="11243"
+PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ACE\2.2.100\MSS_ACE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490760"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490761"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490761"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490761"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490761"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="253"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="253"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="253"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="254"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="252"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="254"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="253"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490763"
+SIZE="254"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575488923"
+SIZE="4342"
+ENDFILE
+VALUE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.pdc,pdc"
+STATE="utd"
+TIME="1575488922"
+SIZE="866"
+PARENT="<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.v,hdl"
+STATE="utd"
+TIME="1575488922"
+SIZE="2365"
+PARENT="<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\cariomart_mss.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490770"
+SIZE="10638"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\cariomart_mss.v,hdl"
+STATE="utd"
+TIME="1575490768"
+SIZE="18565"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\MSS_ACE_0\MSS_ACE_0.log,???"
+STATE="utd"
+TIME="1575490760"
+SIZE="31587"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\MSS_CCC_0\cariomart_mss_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575490761"
+SIZE="493"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\MSS_CCC_0\cariomart_mss_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
+STATE="utd"
+TIME="1575490761"
+SIZE="2913"
+PARENT="<project>\component\work\cariomart_mss\MSS_CCC_0\cariomart_mss_tmp_MSS_CCC_0_MSS_CCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+STATE="utd"
+TIME="1575490763"
+SIZE="17875"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cariomart_mss\mss_tshell.v,hdl"
+STATE="utd"
+TIME="1575490764"
+SIZE="12226"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss.adb,adb"
+STATE="utd"
+TIME="1575486614"
+SIZE="238592"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss.fdb,fdb"
+STATE="utd"
+TIME="1575490831"
+SIZE="32531"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss.ide_des,ide_des"
+STATE="utd"
+TIME="1575486206"
+SIZE="207"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_compile_log.rpt,log"
+STATE="utd"
+TIME="1575486614"
+SIZE="26829"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_fp\cariomart_mss.pdb,pdb"
+STATE="utd"
+TIME="1575486661"
+SIZE="38291"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_fp\cariomart_mss.pro,pro"
+STATE="utd"
+TIME="1575486708"
+SIZE="2442"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_fp\projectData\cariomart_mss.pdb,pdb"
+STATE="utd"
+TIME="1575486708"
+SIZE="38291"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1575490815"
+SIZE="2688"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1575490832"
+SIZE="719"
+ENDFILE
+VALUE "<project>\designer\impl1\cariomart_mss_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1575490820"
+SIZE="1216"
+ENDFILE
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+STATE="utd"
+TIME="1574928134"
+SIZE="41"
+PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\test.bfm,sim"
+STATE="utd"
+TIME="1575490761"
+SIZE="13065"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\simulation\user.bfm,sim"
+STATE="utd"
+TIME="1575486199"
+SIZE="670"
+PARENT="<project>\component\work\cariomart_mss\cariomart_mss.cxf"
+ENDFILE
+VALUE "<project>\synthesis\cariomart_mss.edn,syn_edn"
+STATE="utd"
+TIME="1575486601"
+SIZE="97793"
+ENDFILE
+VALUE "<project>\synthesis\cariomart_mss.so,so"
+STATE="utd"
+TIME="1575486601"
+SIZE="238"
+ENDFILE
+VALUE "<project>\synthesis\cariomart_mss_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1575486601"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\cariomart_mss_syn.prj,prj"
+STATE="utd"
+TIME="1575486601"
+SIZE="2132"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "cariomart_controller_toplevel::work"
+FILE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.pdc,pdc"
+ENDLIST
+ENDLIST
+LIST "cariomart_mss::work"
+FILE "<project>\component\work\cariomart_mss\cariomart_mss.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\cariomart_mss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\cariomart_mss.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\cariomart_mss.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\cariomart_mss_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\cariomart_mss_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 ENDLIST
 LIST Other_Association
+LIST cariomart_controller_toplevel
+VALUE "<project>\component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.pdc,pdc"
+ENDLIST
+LIST cariomart_mss
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\cariomart_mss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+ENDLIST
 ENDLIST
 LIST SimulationOptions
 UseAutomaticDoFile=true
@@ -109,8 +424,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -143,6 +458,20 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "cariomart_mss::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\cariomart_mss.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\cariomart_mss.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -156,10 +485,53 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:cariomart_mss_prgdata_log.rpt
+SmartDesign;cariomart_mss;0
+SmartDesign;cariomart_controller_toplevel;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
+LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "cariomart_controller_toplevel::work","component\work\cariomart_controller_toplevel\cariomart_controller_toplevel.v","TRUE","FALSE"
+SUBBLOCK "cariomart_mss::work","component\work\cariomart_mss\cariomart_mss.v","TRUE","FALSE"
+ENDLIST
+LIST "cariomart_mss::work","component\work\cariomart_mss\cariomart_mss.v","TRUE","FALSE"
+SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "MSS_APB::work","component\work\cariomart_mss\mss_tshell.v","FALSE","FALSE"
+SUBBLOCK "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "cariomart_mss_tmp_MSS_CCC_0_MSS_CCC::work","component\work\cariomart_mss\MSS_CCC_0\cariomart_mss_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
+ENDLIST
+LIST "cariomart_mss_tmp_MSS_CCC_0_MSS_CCC::work","component\work\cariomart_mss\MSS_CCC_0\cariomart_mss_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
+SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_LVPECL_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_ALL::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_APB::work","component\work\cariomart_mss\mss_tshell.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
 ENDLIST
