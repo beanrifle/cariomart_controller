@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Microsemi\Projects\cariomart_controller\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Microsemi\Projects\cariomart_controller\synthesis\synlog\report\cariomart_mss_fpga_mapper.xml  -top_level_module  cariomart_mss  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  C:\Microsemi\Projects\cariomart_controller\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.edn   -freq 100.000   C:\Microsemi\Projects\cariomart_controller\synthesis\synwork\cariomart_mss_prem.srd  -sap  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.sap  -otap  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.tap  -omap  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v  -sap  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.sap  -ologparam  C:\Microsemi\Projects\cariomart_controller\synthesis\syntmp\cariomart_mss.plg  -osyn  C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.srm  -prjdir  C:\Microsemi\Projects\cariomart_controller\synthesis\  -prjname  cariomart_mss_syn  -log  C:\Microsemi\Projects\cariomart_controller\synthesis\synlog\cariomart_mss_fpga_mapper.srr 
+rc:0 success:1 runtime:1
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\scratchproject.prs|io:o|time:1575486597|size:2179|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.edn|io:o|time:1575490782|size:98359|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\synwork\cariomart_mss_prem.srd|io:i|time:1575490781|size:10289|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.sap|io:o|time:1575490781|size:121|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.tap|io:o|time:0|size:0|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.map|io:o|time:1575490782|size:28|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1487963250|size:72817|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.sap|io:o|time:1575490781|size:121|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\syntmp\cariomart_mss.plg|io:o|time:1575490782|size:327|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.srm|io:o|time:1575490782|size:71240|exec:0
+file:C:\Microsemi\Projects\cariomart_controller\synthesis\synlog\cariomart_mss_fpga_mapper.srr|io:o|time:1575490782|size:13285|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479395834|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479397240|size:14125056|exec:1
