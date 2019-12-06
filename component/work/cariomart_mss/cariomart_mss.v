@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Dec 04 15:19:25 2019
+// Created by SmartDesign Thu Dec 05 22:12:34 2019
 // Version: v11.8 SP1 11.8.1.12
 //////////////////////////////////////////////////////////////////////
 
@@ -10,6 +10,7 @@ module cariomart_mss(
     // Inputs
     ADCDirectInput_0,
     GPIO_0_IN,
+    GPIO_1_IN,
     MSS_RESET_N,
     UART_0_RXD,
     UART_1_RXD,
@@ -24,6 +25,7 @@ module cariomart_mss(
 //--------------------------------------------------------------------
 input  ADCDirectInput_0;
 input  GPIO_0_IN;
+input  GPIO_1_IN;
 input  MSS_RESET_N;
 input  UART_0_RXD;
 input  UART_1_RXD;
@@ -38,6 +40,7 @@ output UART_1_TXD;
 //--------------------------------------------------------------------
 wire   ADCDirectInput_0;
 wire   GPIO_0_IN;
+wire   GPIO_1_IN;
 wire   MSS_ACE_0_ADC2_Y;
 wire   MSS_ACE_0_VAREF0_Y;
 wire   MSS_ADLIB_INST_EMCCLK;
@@ -46,6 +49,7 @@ wire   MSS_ADLIB_INST_MACCLK;
 wire   MSS_ADLIB_INST_MACCLKCCC;
 wire   MSS_ADLIB_INST_PLLLOCK;
 wire   MSS_GPIO_0_GPIO_0_IN_Y;
+wire   MSS_GPIO_0_GPIO_1_IN_Y;
 wire   MSS_RESET_0_MSS_RESET_N_Y;
 wire   MSS_RESET_N;
 wire   MSS_UART_0_RXD_Y;
@@ -94,7 +98,7 @@ assign UART_1_TXD       = UART_1_TXD_net_1;
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPI_net_0 = { 31'h00000000 , MSS_GPIO_0_GPIO_0_IN_Y };
+assign GPI_net_0 = { 30'h00000000 , MSS_GPIO_0_GPIO_1_IN_Y , MSS_GPIO_0_GPIO_0_IN_Y };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -383,6 +387,17 @@ MSS_GPIO_0_GPIO_0_IN(
         .PAD ( GPIO_0_IN ),
         // Outputs
         .Y   ( MSS_GPIO_0_GPIO_0_IN_Y ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "R3" ) )
+MSS_GPIO_0_GPIO_1_IN(
+        // Inputs
+        .PAD ( GPIO_1_IN ),
+        // Outputs
+        .Y   ( MSS_GPIO_0_GPIO_1_IN_Y ) 
         );
 
 //--------INBUF_MSS

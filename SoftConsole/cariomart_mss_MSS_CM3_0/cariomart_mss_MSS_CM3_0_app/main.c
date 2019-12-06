@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "xbee.h"
@@ -13,6 +12,7 @@ int main() {
 	XBEE_init();
 	MSS_GPIO_init();
 	MSS_GPIO_config( MSS_GPIO_0 , MSS_GPIO_INPUT_MODE );
+	MSS_GPIO_config( MSS_GPIO_1 , MSS_GPIO_INPUT_MODE );
 
 	// handler for ADC channel 2
 	adc_handler = ACE_get_channel_handle((const uint8_t *)"ADCDirectInput_0");
@@ -22,12 +22,14 @@ int main() {
 
 
 	while(1){
-		game_enabled = 1;
 		if (game_enabled) {
 			uint16_t adc_data = (ACE_get_ppe_sample(adc_handler) >> 2) - center_position + 335;
-			uint32_t button_state = MSS_GPIO_get_inputs() & MSS_GPIO_0_MASK;
+			uint32_t button_state = (MSS_GPIO_get_inputs() & (MSS_GPIO_0_MASK | MSS_GPIO_1_MASK)) % 3;
 			char packet[20] = "2,";
-			strcat(packet, (button_state) ? "1" : "0");
+			char* button_string = itoa(button_state);
+			if (strlen(button_string) == 0) strcat(packet,"0");
+			else strcat(packet, button_string);
+			free(button_string);
 			strcat(packet, ",");
 			char* adc_string = itoa(adc_data);
 			strcat(packet, adc_string);

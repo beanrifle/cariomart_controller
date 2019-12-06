@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version Libero SoC v11.8 SP1
 Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
-Date: Wed Dec 04 15:20:20 2019
+Date: Thu Dec 05 22:13:49 2019
 
 
 Design: cariomart_mss
@@ -201,6 +201,16 @@ Path 1
   Required (ns):
   Hold (ns):                   1.025
   External Hold (ns):          2.949
+
+Path 2
+  From:                        GPIO_1_IN
+  To:                          MSS_ADLIB_INST/U_CORE:GPI[1]
+  Delay (ns):                  0.635
+  Slack (ns):
+  Arrival (ns):                0.635
+  Required (ns):
+  Hold (ns):                   0.980
+  External Hold (ns):          2.902
 
 
 Expanded Path 1

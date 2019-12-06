@@ -16,14 +16,14 @@ Report for cell cariomart_mss.verilog
   IO Cell usage:
               cell count
            INBUF_A     2
-         INBUF_MSS     4
+         INBUF_MSS     5
         OUTBUF_MSS     2
                    -----
-             TOTAL     8
+             TOTAL     9
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 8
+IO Cells           : 9
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

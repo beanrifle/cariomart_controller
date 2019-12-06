@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2019 12 4 15 19 42)
+      (timeStamp 2019 12 5 22 13 12)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09M-2, mapper mapact, Build 1920R"))
      )
@@ -509,6 +509,7 @@
          (interface
            (port ADCDirectInput_0 (direction INPUT))
            (port GPIO_0_IN (direction INPUT))
+           (port GPIO_1_IN (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_1_RXD (direction INPUT))
@@ -542,6 +543,11 @@
            (property ACT_CONFIG (integer 0))
            (property ACT_PIN (string "R1"))
           )
+          (instance MSS_GPIO_0_GPIO_1_IN (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "R3"))
+          )
           (instance MSS_GPIO_0_GPIO_0_IN (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
@@ -571,6 +577,10 @@
           (net GPIO_0_IN (joined
            (portRef GPIO_0_IN)
            (portRef PAD (instanceRef MSS_GPIO_0_GPIO_0_IN))
+          ))
+          (net GPIO_1_IN (joined
+           (portRef GPIO_1_IN)
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_1_IN))
           ))
           (net MSS_RESET_N (joined
            (portRef MSS_RESET_N)
@@ -1720,7 +1730,6 @@
            (portRef (member gpi 27) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 28) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 29) (instanceRef MSS_ADLIB_INST))
-           (portRef (member gpi 30) (instanceRef MSS_ADLIB_INST))
            (portRef (member emcrdb 0) (instanceRef MSS_ADLIB_INST))
            (portRef (member emcrdb 1) (instanceRef MSS_ADLIB_INST))
            (portRef (member emcrdb 2) (instanceRef MSS_ADLIB_INST))
@@ -1860,6 +1869,10 @@
           (net MSS_GPIO_0_GPIO_0_IN_Y (joined
            (portRef Y (instanceRef MSS_GPIO_0_GPIO_0_IN))
            (portRef (member gpi 31) (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_GPIO_0_GPIO_1_IN_Y (joined
+           (portRef Y (instanceRef MSS_GPIO_0_GPIO_1_IN))
+           (portRef (member gpi 30) (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_RESET_0_MSS_RESET_N_Y (joined
            (portRef Y (instanceRef MSS_RESET_0_MSS_RESET_N))

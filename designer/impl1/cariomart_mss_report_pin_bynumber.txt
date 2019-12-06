@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Dec 04 15:20:15 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Dec 05 22:13:42 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: Libero SoC v11.8 SP1
 Version: 11.8.1.12
@@ -364,7 +364,7 @@ P21                       TDO                           Reserved
 P22                       TRSTB                         Reserved
 R1      MSS_RESET_N       MSS_RESET_N                   Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
 R2                        VCCFPGAIOB5                   Reserved
-R3                        GPIO_1/IO46RSB4V0             Unassigned
+R3      GPIO_1_IN         GPIO_1/IO46RSB4V0             Fixed        LVTTL    ---                ---   None           No               ---   ---               No           Yes
 R4                        Not Bonded                    Unconnected
 R5                        Not Bonded                    Unconnected
 R6                        Not Bonded                    Unconnected

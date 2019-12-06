@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
 #--  Project file C:\Microsemi\Projects\cariomart_controller\synthesis\run_options.txt
-#--  Written on Wed Dec 04 15:19:38 2019
+#--  Written on Thu Dec 05 22:13:08 2019
 
 
 #project files

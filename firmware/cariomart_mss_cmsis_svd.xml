@@ -2,7 +2,7 @@
 <device>
   <name>cariomart_mss</name>
   <version>1.0</version>
-  <description>CMSIS description for cariomart_mss.  Created by Microsemi SmartDesign on Wed Dec 04 15:19:26 2019</description>
+  <description>CMSIS description for cariomart_mss.  Created by Microsemi SmartDesign on Thu Dec 05 22:12:36 2019</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
