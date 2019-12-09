@@ -13,7 +13,7 @@ Opened an existing Libero design cariomart_mss.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: cariomart_mss_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:03 )
+The Report command succeeded ( 00:00:02 )
 Wrote timing report to file: cariomart_mss_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -26,6 +26,6 @@ The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\Microsemi\Projects\cariomart_controller\designer\impl1\cariomart_mss.adb.
 
-The Execute Script command succeeded ( 00:00:04 )
+The Execute Script command succeeded ( 00:00:03 )
 Design closed.
 

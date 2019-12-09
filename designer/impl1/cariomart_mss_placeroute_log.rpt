@@ -33,24 +33,24 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Dec 05 22:13:29 2019
+Timing-driven Placer Started: Sun Dec 08 21:22:40 2019
 
-Placer Finished: Thu Dec 05 22:13:31 2019
+Placer Finished: Sun Dec 08 21:22:42 2019
 Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: cariomart_mss                   Started: Thu Dec 05 22:13:32 2019
+Design: cariomart_mss                   Started: Sun Dec 08 21:22:44 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: cariomart_mss                   
-Finished: Thu Dec 05 22:13:37 2019
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:05
+Finished: Sun Dec 08 21:22:47 2019
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
 Total Memory Usage: 160.7 Mbytes
                         o - o - o - o - o - o
 
@@ -59,7 +59,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:12 )
+The Layout command succeeded ( 00:00:11 )
 Wrote status report to file: cariomart_mss_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,6 +81,6 @@ The Report command succeeded ( 00:00:01 )
 Design saved to file
 C:\Microsemi\Projects\cariomart_controller\designer\impl1\cariomart_mss.adb.
 
-The Execute Script command succeeded ( 00:00:17 )
+The Execute Script command succeeded ( 00:00:15 )
 Design closed.
 

@@ -7,14 +7,14 @@ Info: The design C:/Microsemi/Projects/cariomart_controller/designer/impl1/cario
 Opened an existing Libero design
 C:/Microsemi/Projects/cariomart_controller/designer/impl1/cariomart_mss.adb.
 
-The Export-map command succeeded ( 00:00:11 )
+The Export-map command succeeded ( 00:00:08 )
 CHECKSUM: 7226
 Wrote to the file: C:\Microsemi\Projects\cariomart_controller\designer\impl1\cariomart_mss.fdb
 
-The Export command succeeded ( 00:00:13 )
+The Export command succeeded ( 00:00:09 )
 Design saved to file
 C:/Microsemi/Projects/cariomart_controller/designer/impl1/cariomart_mss.adb.
 
-The Execute Script command succeeded ( 00:00:19 )
+The Execute Script command succeeded ( 00:00:11 )
 Design closed.
 

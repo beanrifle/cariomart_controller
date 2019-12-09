@@ -22,6 +22,7 @@ int main() {
 
 
 	while(1){
+		game_enabled = 1;
 		if (game_enabled) {
 			uint16_t adc_data = (ACE_get_ppe_sample(adc_handler) >> 2) - center_position + 335;
 			uint32_t button_state = (MSS_GPIO_get_inputs() & (MSS_GPIO_0_MASK | MSS_GPIO_1_MASK)) % 3;
@@ -36,6 +37,7 @@ int main() {
 			free(adc_string);
 			strcat(packet, "\r\n");
 			XBEE_send(packet);
+			delay(40);
 		}
 	}
 

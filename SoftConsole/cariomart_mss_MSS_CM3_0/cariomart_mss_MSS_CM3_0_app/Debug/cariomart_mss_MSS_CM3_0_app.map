@@ -64,19 +64,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./utility.o
  .data          0x00000000        0x0 ./utility.o
  .bss           0x00000000        0x0 ./utility.o
- .text.NVIC_DisableIRQ
-                0x00000000       0x3c ./utility.o
- .text.NVIC_ClearPendingIRQ
-                0x00000000       0x3c ./utility.o
- .text.MSS_TIM2_init
-                0x00000000       0x84 ./utility.o
- .text.MSS_TIM2_start
-                0x00000000       0x1c ./utility.o
- .text.MSS_TIM2_get_current_value
-                0x00000000       0x18 ./utility.o
- .text.MSS_TIM2_load_immediate
-                0x00000000       0x20 ./utility.o
- .text.delay    0x00000000       0x3c ./utility.o
  .text          0x00000000        0x0 ./xbee.o
  .data          0x00000000        0x0 ./xbee.o
  .bss           0x00000000        0x0 ./xbee.o
@@ -227,7 +214,7 @@ Discarded input sections
  .rodata.g_ace_sse_proc_0_name
                 0x00000000        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
  .rodata.g_ace_sse_proc_0_sequence
-                0x00000000       0xd0 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x00000000      0x3e4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
  .rodata.g_ace_sse_proc_1_name
                 0x00000000        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
  .rodata.g_ace_sse_proc_1_sequence
@@ -403,7 +390,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x2ad0
+.text           0x20000000     0x2c70
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -535,214 +522,228 @@ END GROUP
  .text          0x20000470       0x30 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .text.MSS_GPIO_get_inputs
                 0x200004a0       0x18 ./main.o
- .text.main     0x200004b8      0x17c ./main.o
+ .text.main     0x200004b8      0x190 ./main.o
                 0x200004b8                main
+ .text.NVIC_DisableIRQ
+                0x20000648       0x3c ./utility.o
+ .text.NVIC_ClearPendingIRQ
+                0x20000684       0x3c ./utility.o
+ .text.MSS_TIM2_init
+                0x200006c0       0x84 ./utility.o
+ .text.MSS_TIM2_start
+                0x20000744       0x1c ./utility.o
+ .text.MSS_TIM2_get_current_value
+                0x20000760       0x18 ./utility.o
+ .text.MSS_TIM2_load_immediate
+                0x20000778       0x20 ./utility.o
+ .text.delay    0x20000798       0x3c ./utility.o
+                0x20000798                delay
  .text.no_of_digits
-                0x20000634       0x48 ./utility.o
-                0x20000634                no_of_digits
- .text.itoa     0x2000067c       0xd4 ./utility.o
-                0x2000067c                itoa
+                0x200007d4       0x48 ./utility.o
+                0x200007d4                no_of_digits
+ .text.itoa     0x2000081c       0xd4 ./utility.o
+                0x2000081c                itoa
  .text.XBEE_init
-                0x20000750       0x34 ./xbee.o
-                0x20000750                XBEE_init
+                0x200008f0       0x34 ./xbee.o
+                0x200008f0                XBEE_init
  .text.XBEE_send
-                0x20000784       0x20 ./xbee.o
-                0x20000784                XBEE_send
+                0x20000924       0x20 ./xbee.o
+                0x20000924                XBEE_send
  .text.XBEE_rx_handler
-                0x200007a4      0x108 ./xbee.o
-                0x200007a4                XBEE_rx_handler
- .text._exit    0x200008ac        0xc C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200008ac                _exit
+                0x20000944      0x108 ./xbee.o
+                0x20000944                XBEE_rx_handler
+ .text._exit    0x20000a4c        0xc C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20000a4c                _exit
  .text._write_r
-                0x200008b8       0x5c C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200008b8                _write_r
- .text._sbrk    0x20000914       0x94 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20000914                _sbrk
+                0x20000a58       0x5c C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20000a58                _write_r
+ .text._sbrk    0x20000ab4       0x94 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20000ab4                _sbrk
  .text.NVIC_EnableIRQ
-                0x200009a8       0x38 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000b48       0x38 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.NVIC_ClearPendingIRQ
-                0x200009e0       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000b80       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_init
-                0x20000a1c      0x204 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000a1c                MSS_UART_init
+                0x20000bbc      0x204 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000bbc                MSS_UART_init
  .text.MSS_UART_polled_tx
-                0x20000c20       0xe4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000c20                MSS_UART_polled_tx
+                0x20000dc0       0xe4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000dc0                MSS_UART_polled_tx
  .text.MSS_UART_polled_tx_string
-                0x20000d04       0xd0 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000d04                MSS_UART_polled_tx_string
+                0x20000ea4       0xd0 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000ea4                MSS_UART_polled_tx_string
  .text.MSS_UART_get_rx
-                0x20000dd4       0xdc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000dd4                MSS_UART_get_rx
+                0x20000f74       0xdc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000f74                MSS_UART_get_rx
  .text.MSS_UART_isr
-                0x20000eb0      0x11c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001050      0x11c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.default_tx_handler
-                0x20000fcc      0x108 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000116c      0x108 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_set_rx_handler
-                0x200010d4       0xa8 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200010d4                MSS_UART_set_rx_handler
+                0x20001274       0xa8 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001274                MSS_UART_set_rx_handler
  .text.UART0_IRQHandler
-                0x2000117c       0x2c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x2000117c                UART0_IRQHandler
+                0x2000131c       0x2c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000131c                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x200011a8       0x2c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200011a8                UART1_IRQHandler
+                0x20001348       0x2c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001348                UART1_IRQHandler
  .text.NVIC_ClearPendingIRQ
-                0x200011d4       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001374       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .text.MSS_GPIO_init
-                0x20001210       0x6c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x20001210                MSS_GPIO_init
+                0x200013b0       0x6c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200013b0                MSS_GPIO_init
  .text.MSS_GPIO_config
-                0x2000127c       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x2000127c                MSS_GPIO_config
+                0x2000141c       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x2000141c                MSS_GPIO_config
  .text.ACE_init
-                0x200012b8       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
-                0x200012b8                ACE_init
+                0x20001458       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x20001458                ACE_init
  .text.ACE_get_channel_handle
-                0x200012c8       0x74 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
-                0x200012c8                ACE_get_channel_handle
+                0x20001468       0x74 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x20001468                ACE_get_channel_handle
  .text.ACE_get_ppe_sample
-                0x2000133c       0x54 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
-                0x2000133c                ACE_get_ppe_sample
+                0x200014dc       0x54 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x200014dc                ACE_get_ppe_sample
  .text.SystemInit
-                0x20001390        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20001390                SystemInit
+                0x20001530        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20001530                SystemInit
  .text.SystemCoreClockUpdate
-                0x2000139c      0x150 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000139c                SystemCoreClockUpdate
+                0x2000153c      0x150 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000153c                SystemCoreClockUpdate
  .text.GetSystemClock
-                0x200014ec       0xe8 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000168c       0xe8 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .text.ace_init_convert
-                0x200015d4      0x1b4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
-                0x200015d4                ace_init_convert
+                0x20001774      0x1b4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x20001774                ace_init_convert
  .text.NVIC_ClearPendingIRQ
-                0x20001788       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001928       0x3c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
  .text.ace_init_flags
-                0x200017c4        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200017c4                ace_init_flags
+                0x20001964        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001964                ace_init_flags
  .text.process_flag_irq
-                0x200017d0       0x14 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001970       0x14 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
  .text.ACE_PPE_Flag0_IRQHandler
-                0x200017e4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200017e4                ACE_PPE_Flag0_IRQHandler
+                0x20001984       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001984                ACE_PPE_Flag0_IRQHandler
  .text.ACE_PPE_Flag1_IRQHandler
-                0x2000180c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x2000180c                ACE_PPE_Flag1_IRQHandler
+                0x200019ac       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200019ac                ACE_PPE_Flag1_IRQHandler
  .text.ACE_PPE_Flag2_IRQHandler
-                0x20001834       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001834                ACE_PPE_Flag2_IRQHandler
+                0x200019d4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200019d4                ACE_PPE_Flag2_IRQHandler
  .text.ACE_PPE_Flag3_IRQHandler
-                0x2000185c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x2000185c                ACE_PPE_Flag3_IRQHandler
+                0x200019fc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200019fc                ACE_PPE_Flag3_IRQHandler
  .text.ACE_PPE_Flag4_IRQHandler
-                0x20001884       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001884                ACE_PPE_Flag4_IRQHandler
+                0x20001a24       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a24                ACE_PPE_Flag4_IRQHandler
  .text.ACE_PPE_Flag5_IRQHandler
-                0x200018ac       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200018ac                ACE_PPE_Flag5_IRQHandler
+                0x20001a4c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a4c                ACE_PPE_Flag5_IRQHandler
  .text.ACE_PPE_Flag6_IRQHandler
-                0x200018d4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200018d4                ACE_PPE_Flag6_IRQHandler
+                0x20001a74       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a74                ACE_PPE_Flag6_IRQHandler
  .text.ACE_PPE_Flag7_IRQHandler
-                0x200018fc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200018fc                ACE_PPE_Flag7_IRQHandler
+                0x20001a9c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a9c                ACE_PPE_Flag7_IRQHandler
  .text.ACE_PPE_Flag8_IRQHandler
-                0x20001924       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001924                ACE_PPE_Flag8_IRQHandler
+                0x20001ac4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001ac4                ACE_PPE_Flag8_IRQHandler
  .text.ACE_PPE_Flag9_IRQHandler
-                0x2000194c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x2000194c                ACE_PPE_Flag9_IRQHandler
+                0x20001aec       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001aec                ACE_PPE_Flag9_IRQHandler
  .text.ACE_PPE_Flag10_IRQHandler
-                0x20001974       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001974                ACE_PPE_Flag10_IRQHandler
+                0x20001b14       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b14                ACE_PPE_Flag10_IRQHandler
  .text.ACE_PPE_Flag11_IRQHandler
-                0x2000199c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x2000199c                ACE_PPE_Flag11_IRQHandler
+                0x20001b3c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b3c                ACE_PPE_Flag11_IRQHandler
  .text.ACE_PPE_Flag12_IRQHandler
-                0x200019c4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200019c4                ACE_PPE_Flag12_IRQHandler
+                0x20001b64       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b64                ACE_PPE_Flag12_IRQHandler
  .text.ACE_PPE_Flag13_IRQHandler
-                0x200019ec       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x200019ec                ACE_PPE_Flag13_IRQHandler
+                0x20001b8c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b8c                ACE_PPE_Flag13_IRQHandler
  .text.ACE_PPE_Flag14_IRQHandler
-                0x20001a14       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001a14                ACE_PPE_Flag14_IRQHandler
+                0x20001bb4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001bb4                ACE_PPE_Flag14_IRQHandler
  .text.ACE_PPE_Flag15_IRQHandler
-                0x20001a3c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001a3c                ACE_PPE_Flag15_IRQHandler
+                0x20001bdc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001bdc                ACE_PPE_Flag15_IRQHandler
  .text.ACE_PPE_Flag16_IRQHandler
-                0x20001a64       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001a64                ACE_PPE_Flag16_IRQHandler
+                0x20001c04       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001c04                ACE_PPE_Flag16_IRQHandler
  .text.ACE_PPE_Flag17_IRQHandler
-                0x20001a8c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001a8c                ACE_PPE_Flag17_IRQHandler
+                0x20001c2c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001c2c                ACE_PPE_Flag17_IRQHandler
  .text.ACE_PPE_Flag18_IRQHandler
-                0x20001ab4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001ab4                ACE_PPE_Flag18_IRQHandler
+                0x20001c54       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001c54                ACE_PPE_Flag18_IRQHandler
  .text.ACE_PPE_Flag19_IRQHandler
-                0x20001adc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001adc                ACE_PPE_Flag19_IRQHandler
+                0x20001c7c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001c7c                ACE_PPE_Flag19_IRQHandler
  .text.ACE_PPE_Flag20_IRQHandler
-                0x20001b04       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001b04                ACE_PPE_Flag20_IRQHandler
+                0x20001ca4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001ca4                ACE_PPE_Flag20_IRQHandler
  .text.ACE_PPE_Flag21_IRQHandler
-                0x20001b2c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001b2c                ACE_PPE_Flag21_IRQHandler
+                0x20001ccc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001ccc                ACE_PPE_Flag21_IRQHandler
  .text.ACE_PPE_Flag22_IRQHandler
-                0x20001b54       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001b54                ACE_PPE_Flag22_IRQHandler
+                0x20001cf4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001cf4                ACE_PPE_Flag22_IRQHandler
  .text.ACE_PPE_Flag23_IRQHandler
-                0x20001b7c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001b7c                ACE_PPE_Flag23_IRQHandler
+                0x20001d1c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001d1c                ACE_PPE_Flag23_IRQHandler
  .text.ACE_PPE_Flag24_IRQHandler
-                0x20001ba4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001ba4                ACE_PPE_Flag24_IRQHandler
+                0x20001d44       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001d44                ACE_PPE_Flag24_IRQHandler
  .text.ACE_PPE_Flag25_IRQHandler
-                0x20001bcc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001bcc                ACE_PPE_Flag25_IRQHandler
+                0x20001d6c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001d6c                ACE_PPE_Flag25_IRQHandler
  .text.ACE_PPE_Flag26_IRQHandler
-                0x20001bf4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001bf4                ACE_PPE_Flag26_IRQHandler
+                0x20001d94       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001d94                ACE_PPE_Flag26_IRQHandler
  .text.ACE_PPE_Flag27_IRQHandler
-                0x20001c1c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001c1c                ACE_PPE_Flag27_IRQHandler
+                0x20001dbc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001dbc                ACE_PPE_Flag27_IRQHandler
  .text.ACE_PPE_Flag28_IRQHandler
-                0x20001c44       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001c44                ACE_PPE_Flag28_IRQHandler
+                0x20001de4       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001de4                ACE_PPE_Flag28_IRQHandler
  .text.ACE_PPE_Flag29_IRQHandler
-                0x20001c6c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001c6c                ACE_PPE_Flag29_IRQHandler
+                0x20001e0c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001e0c                ACE_PPE_Flag29_IRQHandler
  .text.ACE_PPE_Flag30_IRQHandler
-                0x20001c94       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001c94                ACE_PPE_Flag30_IRQHandler
+                0x20001e34       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001e34                ACE_PPE_Flag30_IRQHandler
  .text.ACE_PPE_Flag31_IRQHandler
-                0x20001cbc       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20001cbc                ACE_PPE_Flag31_IRQHandler
- .text          0x20001ce4       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20001ce4                __libc_init_array
- .text          0x20001d34       0x20 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
-                0x20001d34                free
-                0x20001d44                malloc
- .text          0x20001d54      0x5a4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x20001d54                _malloc_r
- .text          0x200022f8      0x190 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x200022f8                memcpy
- .text          0x20002488        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
-                0x20002488                __malloc_lock
-                0x2000248c                __malloc_unlock
- .text          0x20002490       0x28 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
-                0x20002490                _sbrk_r
- .text          0x200024b8       0x48 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
-                0x200024b8                strcat
- .text          0x20002500       0xbc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
-                0x20002500                strcpy
- .text          0x200025bc       0x60 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
-                0x200025bc                strlen
- .text          0x2000261c       0xa8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
-                0x2000261c                strncmp
- .text          0x200026c4      0x268 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
-                0x200026c4                _malloc_trim_r
-                0x2000276c                _free_r
+                0x20001e5c       0x28 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001e5c                ACE_PPE_Flag31_IRQHandler
+ .text          0x20001e84       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20001e84                __libc_init_array
+ .text          0x20001ed4       0x20 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+                0x20001ed4                free
+                0x20001ee4                malloc
+ .text          0x20001ef4      0x5a4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20001ef4                _malloc_r
+ .text          0x20002498      0x190 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x20002498                memcpy
+ .text          0x20002628        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x20002628                __malloc_lock
+                0x2000262c                __malloc_unlock
+ .text          0x20002630       0x28 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x20002630                _sbrk_r
+ .text          0x20002658       0x48 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcat.o)
+                0x20002658                strcat
+ .text          0x200026a0       0xbc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcpy.o)
+                0x200026a0                strcpy
+ .text          0x2000275c       0x60 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x2000275c                strlen
+ .text          0x200027bc       0xa8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+                0x200027bc                strncmp
+ .text          0x20002864      0x268 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x20002864                _malloc_trim_r
+                0x2000290c                _free_r
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -751,7 +752,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x2000292c                . = ALIGN (0x4)
+                0x20002acc                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -761,146 +762,146 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x2000292c       0x20 ./main.o
- .rodata        0x2000294c       0x1c C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata        0x20002acc       0x20 ./main.o
+ .rodata        0x20002aec       0x1c C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .rodata.g_config_reg_lut
-                0x20002968       0x80 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20002b08       0x80 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .rodata.g_gpio_irqn_lut
-                0x200029e8       0x40 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20002b88       0x40 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .rodata.C.18.2576
-                0x20002a28       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002bc8       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .rodata.g_ace_channel_0_name
-                0x20002a38       0x14 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
-                0x20002a38                g_ace_channel_0_name
+                0x20002bd8       0x14 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x20002bd8                g_ace_channel_0_name
  .rodata.channel_type_lut
-                0x20002a4c       0x30 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x20002bec       0x30 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .rodata.channel_quad_lut
-                0x20002a7c       0x30 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x20002c1c       0x30 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .rodata.str1.4
-                0x20002aac        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20002c4c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x20002ab0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20002ab0                _init
- .init          0x20002ab4        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20002c50        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20002c50                _init
+ .init          0x20002c54        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x20002abc        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20002abc                _fini
- .fini          0x20002ac0        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x20002ac8                PROVIDE (__preinit_array_start, .)
+ .fini          0x20002c5c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20002c5c                _fini
+ .fini          0x20002c60        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20002c68                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x20002ac8                PROVIDE (__preinit_array_end, .)
-                0x20002ac8                PROVIDE (__init_array_start, .)
+                0x20002c68                PROVIDE (__preinit_array_end, .)
+                0x20002c68                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x20002ac8        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x20002acc                PROVIDE (__init_array_end, .)
-                0x20002acc                PROVIDE (__fini_array_start, .)
+ .init_array    0x20002c68        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20002c6c                PROVIDE (__init_array_end, .)
+                0x20002c6c                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x20002acc        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x20002c6c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x20002ad0                PROVIDE (__fini_array_end, .)
-                0x20002ad0                __exidx_start = .
+                0x20002c70                PROVIDE (__fini_array_end, .)
+                0x20002c70                __exidx_start = .
 
-.v4_bx          0x20002ad0        0x0
+.v4_bx          0x20002c70        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20002ad0                __exidx_end = .
-                0x20002ad0                _etext = .
-                0x20002ad0                PROVIDE (__text_end, .)
+                0x20002c70                __exidx_end = .
+                0x20002c70                _etext = .
+                0x20002c70                PROVIDE (__text_end, .)
 
-.data           0x20002ad0      0x530
-                0x20002ad0                __data_load = LOADADDR (.data)
-                0x20002ad0                _sidata = LOADADDR (.data)
-                0x20002ad0                __data_start = .
-                0x20002ad0                _sdata = .
+.data           0x20002c70      0x530
+                0x20002c70                __data_load = LOADADDR (.data)
+                0x20002c70                _sidata = LOADADDR (.data)
+                0x20002c70                __data_start = .
+                0x20002c70                _sdata = .
  *(.jcr)
- .jcr           0x20002ad0        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x20002ad0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x20002c70        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x20002c70        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemFrequency
-                0x20002ad4        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002ad4                SystemFrequency
+                0x20002c74        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c74                SystemFrequency
  .data.SystemCoreClock
-                0x20002ad8        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002ad8                SystemCoreClock
+                0x20002c78        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c78                SystemCoreClock
  .data.g_FrequencyPCLK0
-                0x20002adc        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002adc                g_FrequencyPCLK0
+                0x20002c7c        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c7c                g_FrequencyPCLK0
  .data.g_FrequencyPCLK1
-                0x20002ae0        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002ae0                g_FrequencyPCLK1
+                0x20002c80        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c80                g_FrequencyPCLK1
  .data.g_FrequencyACE
-                0x20002ae4        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002ae4                g_FrequencyACE
+                0x20002c84        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c84                g_FrequencyACE
  .data.g_FrequencyFPGA
-                0x20002ae8        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002ae8                g_FrequencyFPGA
+                0x20002c88        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002c88                g_FrequencyFPGA
  .data.g_ace_channel_desc_table
-                0x20002aec       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
-                0x20002aec                g_ace_channel_desc_table
- .data          0x20002afc       0xf4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x20002afc                _impure_ptr
- .data          0x20002bf0      0x410 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x20002bf0                __malloc_av_
-                0x20002ff8                __malloc_sbrk_base
-                0x20002ffc                __malloc_trim_threshold
-                0x20003000                . = ALIGN (0x4)
-                0x20003000                _edata = .
+                0x20002c8c       0x10 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x20002c8c                g_ace_channel_desc_table
+ .data          0x20002c9c       0xf4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20002c9c                _impure_ptr
+ .data          0x20002d90      0x410 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20002d90                __malloc_av_
+                0x20003198                __malloc_sbrk_base
+                0x2000319c                __malloc_trim_threshold
+                0x200031a0                . = ALIGN (0x4)
+                0x200031a0                _edata = .
 
-.bss            0x20003000       0xb0
-                0x20003000                __bss_start__ = .
-                0x20003000                _sbss = .
+.bss            0x200031a0       0xb0
+                0x200031a0                __bss_start__ = .
+                0x200031a0                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x20003000        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x20003001        0x3 00
+ .bss           0x200031a0        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x200031a1        0x3 00
  .bss.g_stdio_uart_init_done
-                0x20003004        0x4 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200031a4        0x4 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .bss.heap_end.3594
-                0x20003008        0x4 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200031a8        0x4 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .bss.g_gdec_lut
-                0x2000300c        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x200031ac        0xc C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .bss.channel_type_lut_h
-                0x20003018        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .bss           0x2000301c       0x34 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x2000301c                __malloc_top_pad
-                0x20003020                __malloc_current_mallinfo
-                0x20003048                __malloc_max_sbrked_mem
-                0x2000304c                __malloc_max_total_mem
+                0x200031b8        0x4 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .bss           0x200031bc       0x34 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x200031bc                __malloc_top_pad
+                0x200031c0                __malloc_current_mallinfo
+                0x200031e8                __malloc_max_sbrked_mem
+                0x200031ec                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x20003050        0x8 ./main.o
-                0x20003050                adc_handler
-                0x20003054                game_enabled
- COMMON         0x20003058       0x50 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20003058                g_mss_uart1
-                0x20003080                g_mss_uart0
- COMMON         0x200030a8        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x200030a8                errno
-                0x200030b0                . = ALIGN (0x8)
- *fill*         0x200030ac        0x4 00
-                0x200030b0                __bss_end__ = .
-                0x200030b0                _end = .
-                0x200030b0                __end = _end
-                0x200030b0                _ebss = .
-                0x200030b0                PROVIDE (end, .)
+ COMMON         0x200031f0        0x8 ./main.o
+                0x200031f0                adc_handler
+                0x200031f4                game_enabled
+ COMMON         0x200031f8       0x50 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200031f8                g_mss_uart1
+                0x20003220                g_mss_uart0
+ COMMON         0x20003248        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x20003248                errno
+                0x20003250                . = ALIGN (0x8)
+ *fill*         0x2000324c        0x4 00
+                0x20003250                __bss_end__ = .
+                0x20003250                _end = .
+                0x20003250                __end = _end
+                0x20003250                _ebss = .
+                0x20003250                PROVIDE (end, .)
 
-.stack          0x200030b0     0x3000
-                0x200030b0                . = ALIGN (0x4)
-                0x200040b0                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x200030b0     0x1000 00
-                0x200040b0                . = ALIGN (0x4)
-                0x200060b0                . = (. + MAIN_STACK_SIZE)
- *fill*         0x200040b0     0x2000 00
-                0x200060b0                . = ALIGN (0x4)
+.stack          0x20003250     0x3000
+                0x20003250                . = ALIGN (0x4)
+                0x20004250                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20003250     0x1000 00
+                0x20004250                . = ALIGN (0x4)
+                0x20006250                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20004250     0x2000 00
+                0x20006250                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -982,7 +983,7 @@ END GROUP
  .debug_pubnames
                 0x00000af9      0x65f C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_info     0x00000000     0xa431
+.debug_info     0x00000000     0xa432
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x486 ./main.o
  .debug_info    0x00000486      0xe32 ./utility.o
@@ -992,11 +993,11 @@ END GROUP
  .debug_info    0x000044fd     0x1114 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .debug_info    0x00005611     0x1afb C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
  .debug_info    0x0000710c      0x53c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_info    0x00007648      0x490 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
- .debug_info    0x00007ad8     0x1aa2 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .debug_info    0x0000957a      0xeb7 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_info    0x00007648      0x491 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_info    0x00007ad9     0x1aa2 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_info    0x0000957b      0xeb7 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_abbrev   0x00000000     0x110c
+.debug_abbrev   0x00000000     0x1115
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x114 ./main.o
  .debug_abbrev  0x00000114      0x19c ./utility.o
@@ -1006,23 +1007,23 @@ END GROUP
  .debug_abbrev  0x0000089b      0x181 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .debug_abbrev  0x00000a1c      0x225 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
  .debug_abbrev  0x00000c41      0x111 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_abbrev  0x00000d52       0xbd C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
- .debug_abbrev  0x00000e0f      0x191 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .debug_abbrev  0x00000fa0      0x16c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_abbrev  0x00000d52       0xc6 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_abbrev  0x00000e18      0x191 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_abbrev  0x00000fa9      0x16c C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_line     0x00000000     0x32a1
+.debug_line     0x00000000     0x32a3
  *(.debug_line)
- .debug_line    0x00000000      0x6d3 ./main.o
- .debug_line    0x000006d3      0x4ba ./utility.o
- .debug_line    0x00000b8d      0x2ab ./xbee.o
- .debug_line    0x00000e38      0x509 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00001341      0x575 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x000018b6      0x326 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
- .debug_line    0x00001bdc      0x5f9 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
- .debug_line    0x000021d5      0x27b C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_line    0x00002450      0x1a9 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
- .debug_line    0x000025f9      0x4d5 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .debug_line    0x00002ace      0x7d3 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_line    0x00000000      0x6d5 ./main.o
+ .debug_line    0x000006d5      0x4ba ./utility.o
+ .debug_line    0x00000b8f      0x2ab ./xbee.o
+ .debug_line    0x00000e3a      0x509 C:/Microsemi/Projects/cariomart_controller/SoftConsole/cariomart_mss_MSS_CM3_0/cariomart_mss_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00001343      0x575 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x000018b8      0x326 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_line    0x00001bde      0x5f9 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_line    0x000021d7      0x27b C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00002452      0x1a9 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_line    0x000025fb      0x4d5 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_line    0x00002ad0      0x7d3 C:\Microsemi\Projects\cariomart_controller\SoftConsole\cariomart_mss_MSS_CM3_0\cariomart_mss_MSS_CM3_0_hw_platform\Debug\libcariomart_mss_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
 .debug_frame    0x00000000     0x174c
  *(.debug_frame)

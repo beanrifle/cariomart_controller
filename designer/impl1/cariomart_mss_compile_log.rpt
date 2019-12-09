@@ -12,7 +12,7 @@ Opened an existing Libero design cariomart_mss.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Microsemi\Projects\cariomart_controller\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the file:
    C:\Microsemi\Projects\cariomart_controller\synthesis\cariomart_mss.edn
 
@@ -476,6 +476,6 @@ The Report command succeeded ( 00:00:01 )
 Design saved to file
 C:\Microsemi\Projects\cariomart_controller\designer\impl1\cariomart_mss.adb.
 
-The Execute Script command succeeded ( 00:00:08 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 
